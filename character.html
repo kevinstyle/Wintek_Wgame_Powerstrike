@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PowerStrike火力全開 跨時空全壘打對決!-Wgame Inc.</title>
+<link href="css/superstrike.css" rel="stylesheet" type="text/css">
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script>
+$(function(){
+	
+	$('.c_choose').addClass('zhang');
+	$('.character').addClass('c01');
+	
+	//張飛
+	$('#zhang').hover(function(){
+		$('.c_choose').addClass('zhang');
+		$('.character').addClass('c01');
+	},function(){
+		$('.c_choose').removeClass('zhang');
+		$('.character').removeClass('c01');
+	});
+	
+	
+	//沙拉
+	
+	$('#sarah').hover(function(){
+		$('.c_choose').addClass('sarah');
+		$('.character').addClass('c02');
+	},function(){
+		$('.c_choose').removeClass('sarah');
+		$('.character').removeClass('c02');
+	});
+	
+	//巴哈姆特
+	$('#bahamut').hover(function(){
+		$('.c_choose').addClass('bahamut');
+		$('.character').addClass('c04');
+	},function(){
+		$('.c_choose').removeClass('bahamut');
+		$('.character').removeClass('c04');
+	});
+
+	//宮本武藏
+	$('#musashi').hover(function(){
+		$('.c_choose').addClass('musashi');
+		$('.character').addClass('c03');
+	},function(){
+		$('.c_choose').removeClass('musashi');
+		$('.character').removeClass('c03');
+	});
+	
+	//貝多芬
+	$('#beethoven').hover(function(){
+		$('.c_choose').addClass('beethoven');
+		$('.character').addClass('c05');
+	},function(){
+		$('.c_choose').removeClass('beethoven');
+		$('.character').removeClass('c05');
+	});
+	
+	
+});
+</script>
+
+</head>
+
+<body>
+  <div class="navR">
+    <div class="navR00"><a href="index.html" title="回首頁"><img src="images/nav_r00.png" alt="回首頁"></a></div>
+    <div class="navR01"><a href="character.html" title="人物介紹"><img src="images/nav_r01.png" alt="人物介紹"></a></div>
+    <div class="navR02"><a href="gamemode.html" title="遊戲模式"><img src="images/nav_r02.png" alt="遊戲玩法"></a></div>
+    <div class="navR03"><a href="http://www.wgame.com.tw/home/download.html" title="相關下載" target="_blank"><img src="images/nav_r03.png" alt="相關下載"></a></div>
+  </div>
+  <div class="warpaper_02">
+    <div class="warpaper_c">
+      <div class="main">
+        <div>
+          <img src="images/character_tt.png" alt="人物介紹 Character">
+        </div>
+        <div class="character">
+          <div class="c_choose">
+            <img src="images/c_top.png" width="565" height="385" usemap="#character">
+            <map name="character">
+              <area id="zhang" shape="poly" coords="3,57,91,6,184,58,183,164,95,217,3,163" href="#">
+              <area id="sarah" shape="poly" coords="190,58,282,5,373,59,374,162,282,215,191,164" href="#">
+              <area id="bahamut" shape="poly" coords="380,58,470,6,561,59,563,163,472,216,380,164" href="#">
+              <area id="musashi" shape="poly" coords="96,222,187,171,278,223,278,329,189,381,96,331" href="#">
+              <area id="beethoven" shape="poly" coords="376,173,466,225,466,328,377,380,286,329,283,225" href="#">
+            </map>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">copyright 2013 wgame.inc</div>
+</body>
+</html>

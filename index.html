@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PowerStrike火力全開 跨時空全壘打對決!-Wgame Inc.</title>
+<link href="css/superstrike.css" rel="stylesheet" type="text/css">
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script>
+<script>
+$(function(){
+
+	//人物介紹預設
+	$('.c_choose').addClass('zhang');
+	$('.character').addClass('c01');
+	
+	//張飛
+	$('#zhang').hover(function(){
+		$('.c_choose').addClass('zhang');
+		$('.character').addClass('c01');
+	},function(){
+		$('.c_choose').removeClass('zhang');
+		$('.character').removeClass('c01');
+	});
+	
+	
+	//沙拉
+	
+	$('#sarah').hover(function(){
+		$('.c_choose').addClass('sarah');
+		$('.character').addClass('c02');
+	},function(){
+		$('.c_choose').removeClass('sarah');
+		$('.character').removeClass('c02');
+	});
+	
+	//巴哈姆特
+	$('#bahamut').hover(function(){
+		$('.c_choose').addClass('bahamut');
+		$('.character').addClass('c04');
+	},function(){
+		$('.c_choose').removeClass('bahamut');
+		$('.character').removeClass('c04');
+	});
+
+	//宮本武藏
+	$('#musashi').hover(function(){
+		$('.c_choose').addClass('musashi');
+		$('.character').addClass('c03');
+	},function(){
+		$('.c_choose').removeClass('musashi');
+		$('.character').removeClass('c03');
+	});
+	
+	//貝多芬
+	$('#beethoven').hover(function(){
+		$('.c_choose').addClass('beethoven');
+		$('.character').addClass('c05');
+	},function(){
+		$('.c_choose').removeClass('beethoven');
+		$('.character').removeClass('c05');
+	});
+	
+	
+});
+</script>
+<script>
+$(function(){
+	//scrollTo
+	$(".navR00").click(function(){ 
+        $.scrollTo('#index',1000); 
+    }); 
+    $(".navR01").click(function(){ 
+        $.scrollTo('#character',1000); 
+    }); 
+    $(".navR02").click(function(){ 
+        $.scrollTo('#gamemode',1000); 
+    }); 
+});
+</script>
+</head>
+
+<body>
+<ul id="navR">
+  <li><a href="#index" title="回首頁" class="navR00"><img src="images/nav_r00.png" alt="回首頁"></a></li>
+  <li><a href="#character" title="人物介紹" class="navR01"><img src="images/nav_r01.png" alt="人物介紹"></a></li>
+  <li><a href="#gamemode" title="遊戲模式" class="navR02"><img src="images/nav_r02.png" alt="遊戲玩法"></a></li>
+  <li><a href="http://www.wgame.com.tw/home/download.html" title="相關下載" target="_blank" class="navR03"><img src="images/nav_r03.png" alt="相關下載"></a></li>
+</ul>
+</div>
+<!-- end header --> 
+
+<!-- start #index -->
+<div id="index" class="box">
+  <div class="warpaper_i">
+    <div class="warpaper">
+      <div class="main">
+        <div class="index_con">
+          <div class="left"> 
+            <!--<div class="nav"> <a href="character.html" title="SuperStrike人物介紹"><img src="images/nav_01.png" width="140" height="172" alt="人物介紹"></a>
+                  <a href="#" title="SuperStrike遊戲玩法"><img src="images/nav_02.png" width="139" height="172" alt="遊戲玩法"></a>
+                  <a href="#" title="SuperStrike相關下載"><img src="images/nav_03.png" width="140" height="172" alt="相關下載"></a>
+                </div>--> 
+          </div>
+          <div class="right">
+            <div class="pv">
+              <div><iframe width="436" height="245" src="http://www.youtube.com/embed/zUXPPvCV_mw?rel=0" frameborder="0" allowfullscreen></iframe></div>
+            </div>
+            <div class="link"> <img src="images/PowerStrikeAutoDownload.jpg" width="85" height="85" alt="powerstrike火力全開QRcode" ><a href="https://play.google.com/store/apps/details?id=com.wgame.PowerStrike" title="連結至Google Play" target="_blank"><img src="images/googleplay.png" alt="Google Play連結"></a><a href="https://itunes.apple.com/tw/app/huo-li-quan-kai-su-ming-dui-jue/id642801181?mt=8" title="連結至Appstore" target="_blank"><img src="images/appstore.png" alt="Appstore連結" width="142" height="73" style="margin-right:0;"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end #index --> 
+
+<!-- start #character -->
+<div id="character" class="box">
+  <div class="warpaper_02">
+    <div class="warpaper_c">
+      <div class="main">
+        <div> <img src="images/character_tt.png" alt="人物介紹 Character"> </div>
+        <div class="character">
+          <div class="c_choose"> <img src="images/c_top.png" width="565" height="385" usemap="#character">
+            <map name="character">
+              <area id="zhang" shape="poly" coords="3,57,91,6,184,58,183,164,95,217,3,163" href="#">
+              <area id="sarah" shape="poly" coords="190,58,282,5,373,59,374,162,282,215,191,164" href="#">
+              <area id="bahamut" shape="poly" coords="380,58,470,6,561,59,563,163,472,216,380,164" href="#">
+              <area id="musashi" shape="poly" coords="96,222,187,171,278,223,278,329,189,381,96,331" href="#">
+              <area id="beethoven" shape="poly" coords="376,173,466,225,466,328,377,380,286,329,283,225" href="#">
+            </map>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end #character --> 
+
+<!-- start #gamemode -->
+<div id="gamemode" class="box">
+  <div class="warpaper_02">
+    <div class="warpaper_g">
+      <div class="main">
+        <div class="tt"> <img src="images/gamemode_tt.png" alt="遊戲模式 GameMode"> </div>
+        <div class="gamemode"> <img src="images/gamemode01.png" width="1000" height="310" alt="單人Arcade模式">
+          <div style="font-family:Arial, '微軟正黑體'; font-size:15px; width:75%; margin:-50px auto 0 auto; line-height:30px; letter-spacing:1px;">&lt;&nbsp;遊戲模式陸續開放中!!!&nbsp;&gt;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end gamemode -->
+
+<div class="footer">copyright 2013 wgame.inc</div>
+</body>
+</html>
